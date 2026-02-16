@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Student Management System</h1>
+    </header>
+    <main>
+      <section id="student-form">
+        <h2>Add a New Student</h2>
+        <!-- Added action and method to submit to Servlet -->
+        <form id="add-student-form" action="addStudent" method="post">
+          <label for="id">ID:</label>
+          <input type="number" id="id" name="id" required />
+
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" required />
+
+          <label for="type">Type (PART/FULL):</label>
+          <input type="text" id="type" name="type" required />
+
+          <label for="doj">Date of Joining:</label>
+          <input type="date" id="doj" name="doj" required />
+
+          <button type="submit">Add Student</button>
+        </form>
+      </section>
+      <section id="student-list">
+        <h2>Student List</h2>
+        <form action="addStudent" method="get">
+          <button type="submit" class="btn">View All Students</button>
+        </form>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

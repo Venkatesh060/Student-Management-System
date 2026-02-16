@@ -8,6 +8,8 @@ public class Student {
     public String type;
     public Date doj;
 
+    public Student() {}
+
     public Student(int id, String fn, String type, Date doj) {
         this.id = id;
         this.fn = fn;
